@@ -236,8 +236,8 @@ const openPortfolioDetails = (e) => {
 grainAnimation();
 (document.URL.includes('portfolio') && animatePhrase("Portfolio"));
 (document.URL.includes('contact') && animatePhrase("Contact"));
-(document.URL.includes('index.html') && animatePhrase("Villiam Strandh"));
-(document.URL.includes("index") && writeCode());
+(location.pathname === "/" && animatePhrase("Villiam Strandh"));
+(location.pathname === "/" && writeCode());
 
 initMobileMenu()
 mouseCursor()
