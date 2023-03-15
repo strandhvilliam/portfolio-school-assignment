@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script defer src="js/script.js"></script>
+    <title>Villiam Strandh | Software Developer</title>
+</head>
+<body>
+<div id="cursor"></div>
+<div class="grain">
+    <div class="grain-overflow"></div>
+</div>
+
+
+<nav class="nav">
+    <div class="nav__title"><a href="#">(___)</a></div>
+    <label for="ham-checkbox"></label>
+    <input id="ham-checkbox" class="nav__checkbox" type="checkbox">
+
+    <div class="nav__menu">
+        <ul class="nav__menu-list">
+            <li class="nav__menu-item active-page"><a href="index.html">Home</a></li>
+            <li class="nav__menu-item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav__menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="desktop__nav">
+        <ul class="desktop__nav__list">
+            <li class="desktop__nav__item"><a href="index.html">Home</a></li>
+            <li class="desktop__nav__item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="desktop__nav__item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="nav__hamburger">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+    </div>
+</nav>
+
+<div class="wrapper">
+
+    <div class="hero">
+        <div class="hero__content">
+            <div id="animate-phrase" class="hero__title"></div>
+            <div class="hero__subtitle">Software Developer</div>
+            <div class="hero__code"></div>
+        </div>
+    </div>
+
+
+    <div class="intro">
+
+        <div class="intro__container">
+            <div class="intro__image fade-in-element">
+                <img src="images/profile-pic.png" alt="profile picture">
+            </div>
+            <div class="intro__content fade-in-element">
+                <div class="intro__title section-title">
+                    <h1>Who am I?</h1>
+                </div>
+                <div class="intro__description">
+                    I'm a software developer student based in Stockholm, Sweden, with a focus on backend development.
+                    While I primarily use Java and Typescript with Node.js, I'm also well-versed in frontend development
+                    and am always learning new frameworks like React and Spring Boot. I'm also Google Cloud Digital
+                    Leader Certified, which allows me to create cloud-based solutions for modern businesses. Please take
+                    a look at my portfolio and don't hesitate to reach out if you're interested in working together.
+                </div>
+                <a href="#" class="btn btn-primary">Contact me</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="projects">
+        <div class="projects__title section-title"><h1>Projects</h1></div>
+        <div class="projects__container">
+            <div class="projects__item slide-from-left-element">
+                <div class="projects__item-title">
+                    <h1>GEOBITES</h1>
+                </div>
+                <div class="projects__image">
+                    <img src="images/geobites.png" alt="mockup geobites app">
+                </div>
+
+            </div>
+            <div class="projects__item slide-from-right-element">
+                <div class="projects__image">
+                    <img src="images/javashopper.png" alt="mockup javashopper website">
+                </div>
+                <div class="projects__item-title">
+                    <h1>JAVASHOPPER</h1>
+                </div>
+            </div>
+            <div class="projects__item slide-from-left-element">
+                <div class="projects__image">
+                    <img src="images/simple-text-editor.png" alt="mockup text editor">
+                </div>
+                <div class="projects__item-title">
+                    <h1>SIMPLE TEXT EDITOR</h1>
+                </div>
+            </div>
+            <div class="projects__item slide-from-right-element">
+                <div class="projects__image">
+                    <img src="images/chat-tcp-app.png" alt="mockup chat application">
+                </div>
+                <div class="projects__item-title">
+                    <h1>LET'S CHAT - TCP APP</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <div class="cta__title section-title">
+            <h1>Get in touch</h1>
+        </div>
+        <form class="cta__form">
+            <div class="cta__form-group">
+                <label for="sender-name">Your name</label>
+                <input id="sender-name" type="text">
+            </div>
+            <div class="cta__form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="button">Send</button>
+        </form>
+
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__name">
+                <h3>Villiam Strandh | Software Developer</h3>
+            </div>
+            <div class="footer__socials">
+                <a href="https://github.com/strandhvilliam" class="footer__socials-item">
+                    <img src="images/github-mark.svg" alt="github">
+                </a>
+                <a href="#" class="footer__socials-item">
+                    <img src="images/LinkedIn_icon.svg" alt="linkedin">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p>Copyright &copy; 2023 - Villiam Strandh - testmail@mail.se</p>
+    </footer>
+</div>
+
+
+</body>
+</html>

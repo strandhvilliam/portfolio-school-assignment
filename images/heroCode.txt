@@ -1,0 +1,23 @@
+import React from 'react'
+
+    const Developer = () => {
+
+        const ctx = React.useContext(NetworkingContext)
+
+        const someSkills = [
+            'TypeScript','React', 'Node.js',
+            'Java', 'Kotlin', 'Spring Boot'
+        ]
+
+        const clickHandler = () => ctx.addContact()
+
+        return (
+            <>
+                <h1>Villiam Strandh</h1>
+                <p>Software Developer</p>
+                <p>Some skills: {someSkills.join(', ')}</p>
+                <button onClick={clickHandler}>Get in touch</button>
+            </>
+        )
+    }
+    export default Developer

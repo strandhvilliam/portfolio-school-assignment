@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script defer src="js/script.js"></script>
+    <title>Villiam Strandh | Portfolio</title>
+</head>
+<body>
+<div id="cursor"></div>
+<div class="grain">
+    <div class="grain-overflow"></div>
+</div>
+<nav class="nav">
+    <div class="nav__title"><a href="index.html">(___)</a></div>
+    <label for="ham-checkbox"></label>
+    <input id="ham-checkbox" class="nav__checkbox" type="checkbox">
+
+    <div class="nav__menu">
+        <ul class="nav__menu-list">
+            <li class="nav__menu-item"><a href="index.html">Home</a></li>
+            <li class="nav__menu-item active-page"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav__menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="desktop__nav">
+        <ul class="desktop__nav__list">
+            <li class="desktop__nav__item"><a href="index.html">Home</a></li>
+            <li class="desktop__nav__item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="desktop__nav__item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="nav__hamburger">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+    </div>
+</nav>
+
+<div class="portfolio">
+    <div id="animate-phrase" class="portfolio__title fade-in-element"></div>
+
+
+    <ul class="portfolio__container">
+        <li id="geobites-project" class="portfolio__item slide-from-left">
+            <a href="#" class="portfolio__item-link">
+                <h2 class="portfolio__item-title">GEOBITES</h2>
+                <span class="portfolio__item-subtitle">Typescript | SCSS | HTML</span>
+            </a>
+            <div class="portfolio__case">
+                <div class="portfolio__case-description">
+                    <div class="portfolio__case-info">
+                        <h3>Work</h3>
+                        <p>
+                            As a Java developer student, I wanted to try my hand at creating a front-end project using
+                            TypeScript. GeoBites is a restaurant tracking app that allows you to navigate a map and pin
+                            locations of restaurants you have visited, along with ratings, descriptions, and more.
+                        </p>
+                        <p>
+                            This project was built as a practical exercise after completing Jonas Schmedtmann's course
+                            "The Complete JavaScript Course 2023: From Zero to Expert!" on Udemy. It was inspired by his
+                            "mapty-app" idea, but the code has been heavily modified and differs greatly in structure,
+                            execution, and language (TypeScript instead of JavaScript among other things).
+                        </p>
+                    </div>
+                    <div class="portfolio__case-tech">
+                        <h3>Tech</h3>
+                        <ul class="portfolio__case-tech-list">
+                            <li class="portfolio__case-tech-item">Typescript</li>
+                            <li class="portfolio__case-tech-item">SCSS</li>
+                            <li class="portfolio__case-tech-item">Snowpack</li>
+                            <li class="portfolio__case-tech-item">Leaflet</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__case-links">
+                        <a target="_blank" href="https://github.com/strandhvilliam/geobites-typescript-app" class="btn btn-secondary portfolio__case-link"><i class="fa-brands fa-github"></i>Github</a>
+                    </div>
+                </div>
+                <div class="portfolio__case-image">
+                    <img src="images/geobites.png" alt="geobites app">
+                </div>
+            </div>
+        </li>
+        <li id="javashopper-project" class="portfolio__item slide-from-right">
+            <a class="portfolio__item-link">
+                <h2 class="portfolio__item-title">JAVASHOPPER</h2>
+                <span class="portfolio__item-subtitle">NodeJS | Express | Typescript | Java | CSS</span>
+            </a>
+            <div class="portfolio__case">
+                <div class="portfolio__case-description">
+                    <div class="portfolio__case-info">
+                        <h3>Work</h3>
+                        <p>
+                            This is an school-assignment to use JDBC and some functional programming practices to
+                            retrieve data from a MySQL database and display a web-shop for customers to use. I decided
+                            to further build the front-end using node.js and typescript.
+                        </p>
+                        <p>
+                            Since I did not want to use Spring for the Java backend, I made an TCP server that sends the requested data in JSON
+                            format. The node.js application sends requests and handles the received data and further
+                            uses the express framework to send data to browser application. We were also tasked with
+                            providing a report interface to see most sold products and similar statistics.
+                        </p>
+                    </div>
+                    <div class="portfolio__case-tech">
+                        <h3>Tech</h3>
+                        <ul class="portfolio__case-tech-list">
+                            <li class="portfolio__case-tech-item">Typescript</li>
+                            <li class="portfolio__case-tech-item">NodeJS</li>
+                            <li class="portfolio__case-tech-item">Express</li>
+                            <li class="portfolio__case-tech-item">SCSS</li>
+                            <li class="portfolio__case-tech-item">Java</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__case-links">
+                        <a target="_blank" href="https://github.com/strandhvilliam/assignment-shoe-web-shop"
+                           class="btn btn-secondary portfolio__case-link"><i class="fa-brands fa-github"></i>Github</a>
+                    </div>
+                </div>
+                <div class="portfolio__case-image">
+                    <img src="images/javashopper.png" alt="javashopper website">
+                </div>
+            </div>
+        </li>
+        <li id="letschat-project" class="portfolio__item slide-from-left">
+            <a class="portfolio__item-link">
+                <h2 class="portfolio__item-title">LET'S CHAT</h2>
+                <span class="portfolio__item-subtitle">Java | JavaFX</span>
+            </a>
+            <div class="portfolio__case">
+                <div class="portfolio__case-description">
+                    <div class="portfolio__case-info">
+                        <h3>Work</h3>
+                        <p>
+                            This is the result of a school project to create a chat application using client-server
+                            architecture with TCP connection. The application currently works on a single computer that
+                            starts up different clients that connect to the server.
+
+                        </p>
+                    </div>
+                    <div class="portfolio__case-tech">
+                        <h3>Tech</h3>
+                        <ul class="portfolio__case-tech-list">
+                            <li class="portfolio__case-tech-item">Java</li>
+                            <li class="portfolio__case-tech-item">JavaFX</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__case-links">
+                        <a target="_blank" href="https://github.com/strandhvilliam/javafx-tcp-chat"
+                           class="btn btn-secondary portfolio__case-link"><i class="fa-brands fa-github"></i>Github</a>
+                    </div>
+                </div>
+                <div class="portfolio__case-image">
+                    <img src="images/chat-tcp-app.png" alt="javashopper website">
+                </div>
+            </div>
+        </li>
+        <li id="simpletexteditor-project" class="portfolio__item slide-from-right">
+            <a class="portfolio__item-link">
+                <h2 class="portfolio__item-title">SIMPLE TEXT EDITOR</h2>
+                <span class="portfolio__item-subtitle">Java | Swing</span>
+            </a>
+            <div class="portfolio__case">
+                <div class="portfolio__case-description">
+                    <div class="portfolio__case-info">
+                        <h3>Work</h3>
+                        <p>
+                            School assignment to build a simple text editor in Java with Swing. The user may load text
+                            files into the editor as well as save to text files and print. It is possible to change the
+                            styling of the text (altough not yet possible to save the styling when closing).
+                        </p>
+                    </div>
+                    <div class="portfolio__case-tech">
+                        <h3>Tech</h3>
+                        <ul class="portfolio__case-tech-list">
+                            <li class="portfolio__case-tech-item">Java</li>
+                            <li class="portfolio__case-tech-item">Swing</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__case-links">
+                        <a target="_blank" href="https://github.com/strandhvilliam/Simple-Java-TextEditor" class="btn btn-secondary portfolio__case-link"><i class="fa-brands fa-github"></i>Github</a>
+                    </div>
+                </div>
+                <div class="portfolio__case-image">
+                    <img src="images/simple-text-editor.png" alt="javashopper website">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__name">
+            <h3>Villiam Strandh | Software Developer</h3>
+        </div>
+        <div class="footer__socials">
+            <a target="_blank" href="#" class="footer__socials-item">
+                <img src="images/github-mark.svg" alt="github">
+            </a>
+            <a target="_blank" href="https://github.com/strandhvilliam" class="footer__socials-item">
+                <img src="images/LinkedIn_icon.svg" alt="linkedin">
+            </a>
+        </div>
+    </div>
+    <hr>
+    <p>Copyright &copy; 2023 - Villiam Strandh - testmail@mail.se</p>
+
+</footer>
+
+
+</body>
+</html>
